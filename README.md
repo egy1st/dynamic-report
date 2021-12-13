@@ -1,29 +1,28 @@
-﻿# **DynamicComponents - Dynamic Report-----**
+﻿**DynamicComponents - Dynamic Report-----**
 
 Powered by ![](Aspose.Words.243cc0cd-fe8f-469f-9819-4febfc653b1a.001.png)
 
 
-# **Overview**
+**Overview**
 -----
-Dynamic Report
 Dynamic Report is a breakthrough programming application that provides a front-end function for your application. It is the only program that lets you generate query reports in HTML from your database and design your own report page. With Dynamic Report, you can easily build an interactive application or website and better communicate your trade.
-============================================================================================================================================================================================================================================================================================================================================================
+
 Automatic code generation
 Using Dynamic Report is as easy as using WYSIWIG software. You don’t have to weave pa**ges** of code to control the design – simply enter your preferences in the program’s form fields, and Dynamic Report will generate the code for you. This way, all you have to worry about is maintaining your database in the backend.
-==============================================================================================================================================================================================================================================================================================================================
-Fully customizable
+
 Dynamic Report gives you full control over your report’s design, from the title text to the object captions. Add in graphics such as your company logo, a background image, or page and table borders. You even have the option to show the grouping data, group navigator, and data summaries.
-===============================================================================================================================================================================================================================================================================================
-` `Language support
+
+Language support
 Dynamic Report recognizes major Eastern languages, so your users can view their results in their native language. There’s no need to code in special characters, either – the program automatically adjusts the orientation and alignment to accommodate foreign type.
+
 Runs on any application
 You can easily integrate Dynamic Report into your project coding software. It works with all COM-based applications including Visual Basic, Visual basic C++, Delphi, and Borland C++.  Even a fully customized report generator takes up only a few lines of code, unlike other add-ons which you have to code in at every page.
-=================================================================================================================================================================================================================================================================================================================================
+
 Easy installation and setup
 You do not need to be an advanced programmer in order to install and fully use Dynamic Report. Its setup program automatically registers the Dc\_DynamicReport10.dll file on your system. To integrate it into your project, simply select 'add reference' from the project menu.  Click the 'browse' button to locate your DC\_DynamicReport35.dll file.
-=========================================================================================================================================================================================================================================================================================================================================================
-# 
-# **Features -----**
+
+
+**Features -----**
 DC DynamicReport comes with a lot of functions that enables you get a full control of your report
 just define few lines of code and get it works. That is all !!
 
