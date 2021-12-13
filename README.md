@@ -22,7 +22,7 @@ Easy installation and setup
 You do not need to be an advanced programmer in order to install and fully use Dynamic Report. Its setup program automatically registers the Dc\_DynamicReport10.dll file on your system. To integrate it into your project, simply select 'add reference' from the project menu.  Click the 'browse' button to locate your DC\_DynamicReport35.dll file.
 
 
-**Features -----**
+**Features**
 DC DynamicReport comes with a lot of functions that enables you get a full control of your report
 just define few lines of code and get it works. That is all !!
 
@@ -88,26 +88,27 @@ MsgBox("Report has been generated at " + Application.StartupPath + "\" + "Sales.
 Start("IExplore.exe", Application.StartupPath + "\Sales.xml") 
 
 
-# **System Requirements -----**
+**System Requirements**
 DC.DynamicReport runs as a COM class for included in any developing langauge support COM based application as  Visual Basic , Visual C++ , Borland C++ , Delphi  and others ..
-# **Installing DC.DynamicReport-----**
+**Installing DC.DynamicReport**
 The DC.DynamicReport setup program will automatically register the DC\_DynamicReport35.dll file on your system. 
 
 There is no need to manually run RegSvr32.exe on your development system. 
-# **Including DC.DynamicReport**
+**Including DC.DynamicReport**
 -----
 To include DC.DynamicReport in your project  
 
 1. From Project menu select add reference 
 1. Push Browse button to locate your DC\_DynamicReport35.DLL file, now the specific DLL included in your references
-# **Deploying DC.DynamicReport-----**
+
+**Deploying DC.DynamicReport**
 Files need to be distributed with DC DynamicReport COM based applications
 
-- ` `DC\_Dynamic Report35 .dll
-- CSS Files(plain.css, red.css, blue.css, brown.css, green.css, grey.css and pink.css)
+-DC\_Dynamic Report35.dll
+-CSS Files(plain.css, red.css, blue.css, brown.css, green.css, grey.css and pink.css)
 
 
-# **InitReport Function-----**
+**InitReport Function**
 InitReport Function, should be your first assignment , an error may occur if you do not. We support eastern languages in all of our components, so Dynamic Report comes with support for right to left orientation. You should order your data by the field you are willing to groub by. 
 
 **Syntax:**
@@ -159,7 +160,7 @@ oRep.initReport(ds, False)
 
 
 
-# **useStyle Function -----**
+**useStyle Function**
 useStyle function enables you to set your report theme using predefinded css files.
 
 **Syntax:**
@@ -181,7 +182,7 @@ oRep.useStyle("grey.css", True)
 
 
 
-# **SetTitle Function-----**
+**SetTitle Function**
 SetTitle enables you set the title of the report
 
 **Syntax:**
@@ -199,7 +200,7 @@ oRep.setTitle("Orders Report")
 
 
 
-# **SetReportHeader Function-----**
+**SetReportHeader Function**
 SetReportHeader enables you set your report header lines , you can add as many lines as you want
 
 **Syntax:**
@@ -215,7 +216,7 @@ oRep.setReportHeader("This is Dynamic Report v3.5", "Powered by EgyFirst Softwar
 
 
 
-# **GroupBy Function-----**
+**GroupBy Function**
 GroupBy function enables you set grouping data, you can add as many lines as you want. Use setCaption to put proper caption for dataset fields names, otherwise fields names will be used as caption by default.
 
 **Syntax:**
@@ -237,7 +238,7 @@ oRep.groubBy("OrderID", "Order Id")
 
 
 
-# **SumFields Function-----**
+**SumFields Function**
 sumFields function enables you to sum defined fields** 
 
 **Syntax:**
@@ -255,7 +256,7 @@ oRep.sumFields("Quantity", "Value", "DiscountValue", "NetValue") 
 
 
 
-# **SetCaption Function-----**
+**SetCaption Function**
 SetCaption  function enables you set caption for fields which may differ from its names
 this mean a field named "ID" may get a new caption like "Customer ID"
 
@@ -274,7 +275,7 @@ oRep.setCaption("Order ID", "Product ID", "Product Name", "Unit Price", "Quantit
 
 
 
-# **generateReport Function -----**
+**generateReport Function**
 generateReport function is the function responsible for viewing report, so itshould be your last assignment after all report configuration methods.
 
 **Syntax:**
@@ -334,7 +335,7 @@ oRep.generateReport("Sales", Application.StartupPath + "\")
 
 
 
-# **setRegistrationKey Function -----**
+**setRegistrationKey Function**
 setRegistrationKey Function enables you to set your purchased serial number, to get a complete use of your software. if you deployed an application that use Dc DynamicREport without setting your registration key, this will result in an annoying popup screen.
 
 **Syntax:**
@@ -425,14 +426,14 @@ Start("IExplore.exe", Application.StartupPath + "\Sales.xml")
 
 
 
-# **Contact us -----**
-Company : EG1ST Software
+**Contact me**
+Company: EG1ST Software
 
-Dynamic Components™  is trade mark ©2005-2021
+Dynamic Components™ is trade mark ©2005-2021
 
-Home Page:      <https://zerobytes.one>
+Home Page: <https://zerobytes.one>
 
-General Manager E-Mail  <01@zerobytes.one>
+General Manager E-Mail <01@zerobytes.one>
 
 
 # **License Agreement**
