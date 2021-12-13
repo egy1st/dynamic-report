@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<TITLE>InitReport</TITLE>
+</HEAD>
+<BODY>
+<H1><font color="#000080">InitReport Function<HR>
+</font></H1>
+InitReport Function, should  be your first assignment , an 
+error may occur if you do not. We support eastern languages in all of our components, so 
+Dynamic Report comes with support for right to left orientation.
+You should order your data by the field you are willing to groub by.
+ <p class="Body-Text"><b><font color="#000080">Syntax:<br>
+</font></b>Public Sub initReport(ByRef ReportTable As DataSet, ByVal Right2Left As Boolean)</p>
+<p class="Body-Text"><br>
+  It takes 1 parameter<br>
+  1- Your data recordset (SQL Statment) as dataset</p>
+<p class="Body-Text">2-Right2Left defines orientation, if true it will be Right2Left, while False means Left2Right (Default State)<br>
+&nbsp;</p>
+<p class="Body-Text"><b><font color="#000080">Example:<br>
+</font></b></p>
+<p>Dim connetionString As String<br>
+  Dim connection As SqlConnection<br>
+  Dim command As SqlCommand<br>
+  Dim adapter As New SqlDataAdapter<br>
+Dim sql As String<br>
+<span class="Body-Text">Dim oRep As New DynamicComponents.DynamicReport()</span><br>
+  <br>
+connetionString = &quot;Data Source=.\SQLEXPRESS;AttachDbFilename=&quot; + Application.StartupPath + &quot;\nWindSQL.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True&quot;</p>
+<p> ' you should order your data by the field you are willing to groub by<br>
+  sql = &quot;select * from OrderDetails_Query order by OrderID&quot;<br>
+connection = New SqlConnection(connetionString)</p>
+<p> Try</p>
+<p> connection.Open()<br>
+  command = New SqlCommand(sql, connection)<br>
+  adapter.SelectCommand = command<br>
+  adapter.Fill(ds)<br>
+  adapter.Dispose()<br>
+  command.Dispose()<br>
+  connection.Close()</p>
+<p> Catch ex As Exception</p>
+<p> MsgBox(&quot;Can not open connection ! &quot;)<br>
+  Exit Sub</p>
+<p> End Try<br>
+</p>
+<p class="Body-Text"><br>
+oRep.initReport(ds, False)<br>
+&nbsp;</p>
+<p class="Body-Text">&nbsp;</p>
+<p class="Body-Text">&nbsp;</p>
+</BODY>
+</HTML>
