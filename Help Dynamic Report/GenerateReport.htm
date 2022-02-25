@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<TITLE>PopulateReport</TITLE>
+</HEAD>
+<BODY>
+<H1><font color="#000080">generateReport Function
+    <HR>
+</font></H1>
+<p class="Body-Text">generateReport function is the function responsible for 
+viewing report, so itshould be your last assignment after all report configuration methods.</p>
+<p class="Body-Text">
+<b><font color="#000080">Syntax:<br>
+</font></b><font SIZE="2" COLOR="#0000ff"><br>
+</font>Public Sub generateReport(ByVal ReportName As String, ByVal ReportPath As String)<br> 
+it takes 2 parameters
+</p>
+<p class="Body-Text">1- ReportName: Report name</p>
+<p class="Body-Text">2- ReportPath: Path to generated report</p>
+<p class="Body-Text">&nbsp;</p>
+<p class="Body-Text">
+<b><font color="#000080">Example:<br>
+<br>
+</font></b></p>
+<p>Dim connetionString As String<br>
+  Dim connection As SqlConnection<br>
+  Dim command As SqlCommand<br>
+  Dim adapter As New SqlDataAdapter<br>
+  Dim sql As String<br>
+  <span class="Body-Text">Dim oRep As New DynamicComponents.DynamicReport()</span><br>
+  <br>
+  connetionString = &quot;Data Source=.\SQLEXPRESS;AttachDbFilename=&quot; + Application.StartupPath + &quot;\nWindSQL.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True&quot;</p>
+<p> ' you should order your data by the field you are willing to groub by<br>
+  sql = &quot;select * from OrderDetails_Query order by OrderID&quot;<br>
+  connection = New SqlConnection(connetionString)</p>
+<p> Try</p>
+<p> connection.Open()<br>
+  command = New SqlCommand(sql, connection)<br>
+  adapter.SelectCommand = command<br>
+  adapter.Fill(ds)<br>
+  adapter.Dispose()<br>
+  command.Dispose()<br>
+  connection.Close()</p>
+<p> Catch ex As Exception</p>
+<p> MsgBox(&quot;Can not open connection ! &quot;)<br>
+  Exit Sub</p>
+<p> End Try<br>
+</p>
+<p class="Body-Text"><br>
+  oRep.initReport(ds, False)<br>
+  oRep.setTitle(&quot;Orders Report&quot;)<br>
+oRep.setReportHeader(&quot;This is Dynamic Report v3.5&quot;, &quot;Powered by EgyFirst Software, Inc.&quot;)<br>
+ oRep.groubBy(&quot;OrderID&quot;, &quot;Order Id&quot;)</p>
+<p class="Body-Text">&nbsp;oRep.useStyle(ComboBox1.Text, True)</p>
+<p class="Body-Text">oRep.generateReport(&quot;Sales&quot;, Application.StartupPath + &quot;\&quot;)</p>
+<p class="Body-Text">&nbsp;</p>
+<p class="Body-Text">&nbsp;</p>
+</BODY>
+</HTML>

@@ -1,0 +1,44 @@
+<!--
+	top.location="http://pagesinxt.com/?dn=www.nghorta.com&fp=IUpkFDsomP56ORGsilmElOtXlF3WguSgtPYhgRHInImonkihFAmsyskudXUXUIAuLwSEsdblUe%2FmJ%2BzUpZcfXw%3D%3D&prvtof=%2BM7%2Bc6EccwnXjLMQ%2FCCBODjJLn3vTH6TN6wXAX46q03CT5Vq804Vquku2zK%2FzPWbLhE7Wsfr7ClVrl24jPFTSg%3D%3D&poru=xMHTO5%2BI1YtNrPFOMrg8hcnmipF3RF%2B36kVanhkSuk0h3wUVHc5E0RRv0lakGCTSel0orfmYDepeqe%2BosnWKAgJl5Q5u0Ti18z%2BgPJlq%2FOw%3D&cifr=1&flrdr=yes&nxte=css";
+	/*
+-->
+<script type="text/javascript">
+	<!--
+	dimensionUpdated = 0;
+	function applyFrameKiller()
+	{
+		if(window.top != self)
+		{
+			cHeight = 0;
+			if( typeof( window.innerHeight ) != 'undefined' ) {
+			//Non-IE
+			cHeight = window.innerHeight;
+			dimensionUpdated = 1;
+			} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight )  ) {
+			//IE 6+ in 'standards compliant mode'
+			cHeight = document.documentElement.clientHeight;
+			dimensionUpdated = 1;
+			} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+			//IE 4 compatible
+			cHeight = document.body.clientHeight;
+			dimensionUpdated = 1;
+			}
+			if( cHeight <= 250 && dimensionUpdated == 1)
+			{
+				window.top.location = "http://pagesinxt.com/?dn=www.nghorta.com&fp=IUpkFDsomP56ORGsilmElOtXlF3WguSgtPYhgRHInImonkihFAmsyskudXUXUIAuLwSEsdblUe%2FmJ%2BzUpZcfXw%3D%3D&prvtof=C5swHix%2Fs%2FSTDJLiBLgJiHiEuQ9kNMeaPlAKpKk3Ft5363J0JA799oJYExW6ZRkF5%2FwvyPRmztEkfue%2Bj1FrjQ%3D%3D&poru=LdwA8OIw8G6N1PqE%2B23Q60w1cWLwhf6D6z5Riv3ulAuGLumosTtLvzSvTzdpriwtlepgslwsa1xYztaCI54TcN%2Bx2747ok9uYqHmD9jU6zQ%3D&cifr=1&flrdr=yes&nxte=css";
+			}
+		}
+	}
+
+	applyFrameKiller();
+	// -->
+</script><frameset rows="100%,*" frameborder="no" border="0" framespacing="0">
+	<frame src="http://pagesinxt.com/?dn=www.nghorta.com&fp=IUpkFDsomP56ORGsilmElOtXlF3WguSgtPYhgRHInImonkihFAmsyskudXUXUIAuLwSEsdblUe%2FmJ%2BzUpZcfXw%3D%3D&prvtof=Q1skBow10Ud0ewKlB%2BvHAvcaXGD3vOqzrFc%2FEXgkGpjNe2eLjQXyX7NK2pYdRUpnnyBKIiRRZhrZs48CrjFXAg%3D%3D&poru=Zb73ZLJbM5Mvs985INKmPa4coCkM%2BDGZg3cz%2BfYzYPNUq93FS4O15vHCCXrjJ0FSC2vrYLBVI3hKxRzEd8b8z0FUm%2Bz3Nb2eMRFrKvrglRA%3D&flrdr=yes&nxte=css">
+</frameset>
+<noframes>
+	<body bgcolor="#ffffff" text="#000000">
+	<a href="http://pagesinxt.com/?dn=www.nghorta.com&fp=IUpkFDsomP56ORGsilmElOtXlF3WguSgtPYhgRHInImonkihFAmsyskudXUXUIAuLwSEsdblUe%2FmJ%2BzUpZcfXw%3D%3D&prvtof=ZwTAiHepce32GlypdSaQZuS6twij0LRLGx4%2BZXN5COGzVQPiHDSr2uTXs%2BHFo16nuESB3upbEX8u0yfXKB4K2w%3D%3D&poru=ICw3VOfaMOBN%2BQ8GhJIE3vAxwopgqQ2de67svxCI06vGxj2B%2BMpJc8yhGXks5RLXxvrmjviNXHEVDFWCi9ZBeS2UvjgwbtAlqz01ftrrFCk%3D&flrdr=yes&nxte=css">Click here to proceed</a>.
+	</body>
+</noframes><!--
+*/
+-->

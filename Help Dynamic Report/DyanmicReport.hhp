@@ -1,0 +1,36 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=DC Dynamic Report v3.5.chm
+Contents file=Table of Contents.hhc
+Default topic=DynamicComponents Dynamic Report.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=DC Dynamic Report v3.5 Help
+
+
+[FILES]
+How to Register your Copy.htm
+License.htm
+Overview.htm
+Tutorial.htm
+Deploying Dynamic Report.htm
+Including DC.Dynamic Report.htm
+Installing Dynamic Report.htm
+GroupBy.htm
+InitReport.htm
+SetTitle.htm
+SumFields.htm
+SetCaption.htm
+SetReportFooter.htm
+SetReportHeader.htm
+UseStyle.htm
+DynamicComponents Dynamic Report.htm
+Contact us.htm
+How to order.htm
+System Requirements.htm
+setRegistrationKey.htm
+
+[INFOTYPES]
+

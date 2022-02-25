@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<TITLE>SumFields</TITLE>
+</HEAD>
+<BODY>
+<H1><font color="#000080">SumFields Function<HR>
+</font></H1>
+<p>sumFields function enables you to sum defined fields<b><font color="#000080">
+</font></b></p>
+<p>
+<b><font color="#000080">Syntax:<br>
+<br>
+</font></b>Public Sub sumFields(ByVal ParamArray str_Line() As String)<br>
+It takes only one parameter<br>
+1- str_Line&nbsp; is a&nbsp; parameter array , so you can add as many summed 
+fields&nbsp; as you want 
+, delimetered by comma &quot;,&quot;</p>
+<p>
+<b><font color="#000080">Example:<br>
+</font></b></p>
+<p>Dim oRep As New DynamicComponents.DynamicReport()</p>
+<p>oRep.sumFields(&quot;Quantity&quot;, &quot;Value&quot;, &quot;DiscountValue&quot;, &quot;NetValue&quot;)&nbsp;</p>
+<p class="Body-Text">&nbsp;</p>
+<p class="Body-Text">&nbsp;</p>
+</BODY>
+</HTML>
